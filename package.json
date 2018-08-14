@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name VueImageInputPreview ./src/components/VueImageInputPreview.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
