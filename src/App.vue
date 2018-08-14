@@ -5,12 +5,10 @@
 
       <VueImageInputPreview>
 
-        <!--<div slot="image-preview-template" slot-scope="{chooseImage, image_src, fileName}">-->
-          <!--<p>{{fileName}}</p>-->
-          <!--<img class="image" :src=image_src alt="alt text" style="width: 100px; height: 100px">-->
-
-          <!--<input type="file" class="input" accept="image/*" name="inputName" @change="chooseImage">-->
-        <!--</div>-->
+        <div slot="template" slot-scope="{chooseImage, image_src, fileName}" class="body">
+          <img class="image" :src=image_src alt="file" v-if="image_src">
+          <input type="file" accept="image/*" class="input" name="file" @change="chooseImage">
+        </div>
 
       </VueImageInputPreview>
     </div>

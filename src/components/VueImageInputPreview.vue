@@ -1,6 +1,6 @@
 <template>
     <div class="vue-image-input-preview-container">
-        <slot name="image-preview-template" :chooseImage="chooseImage" :image_src="image_src" :fileName="fileName">
+        <slot name="template" :chooseImage="chooseImage" :image_src="image_src" :fileName="fileName">
 
             <div class="body">
                 <img class="image" :src=image_src alt="file" v-if="image_src">
@@ -25,7 +25,6 @@
       },
 
       methods: {
-
           chooseImage (e) {
               let files = e.target.files;
 
